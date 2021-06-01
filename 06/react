@@ -1,0 +1,27 @@
+state: modele de donnée aui persiste durant la vie de l'application
+props: donnée que l'on passe a un composant 
+
+
+
+exemple composant vue.js
+<template>
+<div>
+  <CIcon v-show="!filled" name="cil-star" /> <FontAwesomeIcon v-show="filled" :icon="['fa', 'star']"/>
+</div>
+</template>
+
+<script>
+export default {
+  name: "FavoriteStar",
+  props: {
+    filled: {
+      type: Boolean,
+      default: false
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+</style>
