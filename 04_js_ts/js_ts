@@ -1,0 +1,17 @@
+Que fait ce module ?⇒ 
+Il defini des 2 modeles de données Car et User  et il effectue une requete sur /user
+Pour chaue User il rempli le modele de donnée via la méthode f
+
+
+Comment utiliser ce module ?⇒ import {} from '@/get_users.ts' ??
+
+
+Comment ajouter un traitement des erreurs sur lesdonnées reçues ? (on voudrait capterl’erreur et afficher un message)⇒ .catch( (error) => {})
+
+Pouvez-vous donner un exemple de ce queuserspourraitcontenir une fois le code exécuté. 
+
+la liste export const users: User[] = [] contiendra les lements retourné pqr !user
+
+[
+{fullname: string;email: string;cars: Car[];}, {fullname: string;email: string;cars: Car[];}
+]
